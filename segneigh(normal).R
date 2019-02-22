@@ -52,7 +52,6 @@ segn=function(data,K=5,pen=0){
   }
   
   signcps=NULL
-  pens=0:(K-1)
   for(i in 1:length(pen)){
     thres=(-2*likemat[,L]) >= pen[i]
     if(sum(thres)==0){
